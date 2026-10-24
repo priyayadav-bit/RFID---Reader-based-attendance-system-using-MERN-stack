@@ -1,0 +1,21 @@
+{
+  "name": "smart-attendance-rfid-system",
+  "version": "1.0.0",
+  "description": "Smart Attendance System using NodeMCU ESP8266, RC522 RFID Reader and MERN Stack",
+  "scripts": {
+    "server": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "seed": "npm --prefix server run seed",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build"
+  },
+  "keywords": [
+    "rfid",
+    "attendance",
+    "nodemcu",
+    "mern",
+    "esp8266"
+  ],
+  "author": "",
+  "license": "MIT"
+}

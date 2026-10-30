@@ -174,7 +174,7 @@ void sendScanToServer(String uid) {
       StaticJsonDocument<256> doc;
       DeserializationError err = deserializeJson(doc, response);
 
-      const char* status = (!err && doc.containsKey("status")) ? doc["status"] : "";
+      const char* status = doc["status"] | "";
 
       if (httpCode == 201 || strcmp(status, "marked") == 0) {
         const char* name = doc["name"] | "Student";
